@@ -17,26 +17,35 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:background="@null"
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/presentbox"
         android:gravity="center"
     />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="아이디"
-    />
-    <EditText
+        android:layout_height="match_parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="비밀번호"
-    />
+        android:layout_height="match_parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:background="@drawable/btn_blue"
+        android:textColor="#ffffff"
         android:text="Login"
     />
 
@@ -51,6 +60,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:background="@drawable/btn_darkblue"
+        android:textColor="#ffffff"
         android:text="Log in with Facebook"
     />
 
